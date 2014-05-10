@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "Stay true to the brand with these orta-sanctioned colors."
   s.homepage         = "https://github.com/neonichu/CPDColors"
-  s.screenshots      = "www.example.com/screenshots_1"
+  s.screenshots      = "https://raw.githubusercontent.com/neonichu/CPDColors/master/screenshot.png"
   s.license          = 'MIT'
   s.author           = { "Boris Bügling" => "boris@icculus.org" }
   s.source           = { :git => "https://github.com/neonichu/CPDColors.git", :tag => s.version.to_s }
