@@ -1,0 +1,14 @@
+PODS:
+  - CPDColors (0.1.0)
+
+DEPENDENCIES:
+  - CPDColors (from `../`)
+
+EXTERNAL SOURCES:
+  CPDColors:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CPDColors: b51a4fbc16786b9aec0539c9f557d25af22e288c
+
+COCOAPODS: 0.32.1

@@ -1,7 +1,7 @@
-pod "CPDColors", :path => "../"
+platform :ios, '5.0'
 
 target "Demo" do
-end
 
-target "DemoTests" do
+pod "CPDColors", :path => "../"
+
 end

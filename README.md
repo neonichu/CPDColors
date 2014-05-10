@@ -20,7 +20,8 @@ it simply add the following line to your Podfile:
 
 Boris Bügling, boris@icculus.org
 
+Follow me on Twitter: @NeoNacho
+
 ## License
 
 CPDColors is available under the MIT license. See the LICENSE file for more info.
-
