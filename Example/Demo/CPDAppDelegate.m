@@ -14,6 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [UIApplication sharedApplication].statusBarHidden = YES;
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName: [UIColor ortaOrange] }];
     
     UITableViewController* tableViewController = [UITableViewController new];

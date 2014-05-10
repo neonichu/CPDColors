@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
   s.name             = "CPDColors"
   s.version          = "0.1.0"
   s.summary          = "Stay true to the brand with these orta-sanctioned colors."
-  s.homepage         = "http://github.com/neonichu/CPDColors"
+  s.homepage         = "https://github.com/neonichu/CPDColors"
   s.screenshots      = "www.example.com/screenshots_1"
   s.license          = 'MIT'
   s.author           = { "Boris Bügling" => "boris@icculus.org" }
-  s.source           = { :git => "http://github.com/neonichu/CPDColors.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/neonichu/CPDColors.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/NeoNacho'
 
   s.ios.deployment_target = '5.0'
