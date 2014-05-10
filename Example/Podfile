@@ -1,0 +1,7 @@
+pod "CPDColors", :path => "../"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
