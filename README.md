@@ -3,11 +3,11 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/CPDColors/badge.png)](http://cocoadocs.org/docsets/CPDColors)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/CPDColors/badge.png)](http://cocoadocs.org/docsets/CPDColors)
 
+Stay true to the brand with these orta-sanctioned colours.
+
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -20,7 +20,7 @@ it simply add the following line to your Podfile:
 
 Boris Bügling, boris@icculus.org
 
-Follow me on Twitter: @NeoNacho
+Follow me on Twitter: [@NeoNacho](https://twitter.com/NeoNacho)
 
 ## License
 
