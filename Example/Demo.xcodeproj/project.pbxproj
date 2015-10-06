@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4C04B35A9D2B446A9217AACC /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E542411444A4BC49A7F8D4F /* Pods-Demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.xcconfig"; path = "Pods/Pods-Demo.xcconfig"; sourceTree = "<group>"; };
+		7CFEA877168EBDC2F0454AD7 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A1ABC7C7191EC3FD0020A964 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ABC7CA191EC3FD0020A964 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1ABC7CC191EC3FD0020A964 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -28,6 +28,7 @@
 		A1ABC7D9191EC3FD0020A964 /* CPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
 		A1ABC7DA191EC3FD0020A964 /* CPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
 		A1ABC7E3191EC3FD0020A964 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D758937715EE9CF6F6C6AC90 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +51,9 @@
 			children = (
 				A1ABC7D0191EC3FD0020A964 /* Code */,
 				A1ABC7C9191EC3FD0020A964 /* Frameworks */,
+				BD9327431FB9AAB44BB82D53 /* Pods */,
 				A1ABC7C8191EC3FD0020A964 /* Products */,
 				A1ABC7D1191EC3FD0020A964 /* Supporting Files */,
-				5E542411444A4BC49A7F8D4F /* Pods-Demo.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,15 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		BD9327431FB9AAB44BB82D53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CFEA877168EBDC2F0454AD7 /* Pods-Demo.debug.xcconfig */,
+				D758937715EE9CF6F6C6AC90 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +119,7 @@
 				A1ABC7C4191EC3FD0020A964 /* Frameworks */,
 				A1ABC7C5191EC3FD0020A964 /* Resources */,
 				EC278D6462F445D8A008F5DF /* Copy Pods Resources */,
+				A7683CBEABA8C0E37293ECBB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CPD;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Boris Bügling";
 			};
 			buildConfigurationList = A1ABC7C2191EC3FD0020A964 /* Build configuration list for PBXProject "Demo" */;
@@ -172,6 +183,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A7683CBEABA8C0E37293ECBB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC278D6462F445D8A008F5DF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Demo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -220,6 +246,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -274,13 +301,14 @@
 		};
 		A1ABC7F4191EC3FD0020A964 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E542411444A4BC49A7F8D4F /* Pods-Demo.xcconfig */;
+			baseConfigurationReference = 7CFEA877168EBDC2F0454AD7 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.vu0.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,13 +316,14 @@
 		};
 		A1ABC7F5191EC3FD0020A964 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E542411444A4BC49A7F8D4F /* Pods-Demo.xcconfig */;
+			baseConfigurationReference = D758937715EE9CF6F6C6AC90 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.vu0.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

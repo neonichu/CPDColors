@@ -1,5 +1,5 @@
 PODS:
-  - CPDColors (0.1.0)
+  - CPDColors (0.2.0)
 
 DEPENDENCIES:
   - CPDColors (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CPDColors: b51a4fbc16786b9aec0539c9f557d25af22e288c
+  CPDColors: dfcf2134f990d86b0722f3771852df0f6c3db30f
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.39.0.rc.1
