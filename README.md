@@ -1,5 +1,6 @@
 # CPDColors
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![Version](http://cocoapod-badges.herokuapp.com/v/CPDColors/badge.png)](http://cocoadocs.org/docsets/CPDColors)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/CPDColors/badge.png)](http://cocoadocs.org/docsets/CPDColors)
 
@@ -18,7 +19,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Boris Bügling, boris@icculus.org
+Boris Bügling, boris@icculus.org
 
 Follow me on Twitter: [@NeoNacho](https://twitter.com/NeoNacho)
 
